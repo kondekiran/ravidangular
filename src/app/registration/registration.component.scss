@@ -1,3 +1,26 @@
+.toolbar-item-spacer {
+  flex: 1 1 auto;
+}
+
+.app-container {
+  height: 90%;
+  margin: 0;
+}
+.app-sidenav {
+  width: 230px;
+}
+.app-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+mat-sidenav-content{
+  height:85vh
+}
+
+
+/*temp content*/
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -6,10 +29,7 @@
   height: 85vh;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
-.mat-toolbar.mat-primary {
-  background: #ffffff;
-  color: #0c0c0c;
-}
+
 
 .end{
   align-items: end;
@@ -37,11 +57,8 @@ background-image: url(../../assets/images/home-banner.jpg);
   background-repeat: no-repeat;
   height: 50vh;
 }
-.center{
-  margin-top: auto;
-  margin-bottom: auto;
-  color: white;
-}
+
+
 
 
 

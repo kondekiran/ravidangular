@@ -1,61 +1,150 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
-  (click)="drawer.toggle()">
-  <mat-icon>menu</mat-icon>
-  </button>
-
-  <span>My App</span>
+  <span>HEY DEVELOPER</span>
   <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with
+  <button mat-icon-button (click)="regform()" class="example-icon favorite-icon" aria-label="Example icon-button with
   heart icon">
-    <mat-icon>favorite</mat-icon>
+    <mat-icon>man</mat-icon>
   </button>
   <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
     <mat-icon>more_vert</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <mat-icon>login</mat-icon>
-      <span>Login</span>
+    <button mat-menu-item (click)="Logout()" >
+      <mat-icon>logout</mat-icon>
+      <span>LogOut</span>
     </button>
-    <button mat-menu-item >
+    <!-- <button mat-menu-item >
       <mat-icon>updates</mat-icon>
       <span>Updates</span>
     </button>
     <button mat-menu-item>
       <mat-icon>notifications</mat-icon>
       <span>alerts</span>
-    </button>
+    </button> -->
   </mat-menu>
 </mat-toolbar>
+<div >
+  <div
+  class=" row bg-image  text-center shadow-1-strong rounded mb-5 text-white "
+  style="background-image: url('../../assets/images/quinton-coetzee-gpa8Y_Fk7Rg-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%; height:80vh;box-shadow:0px 0px 10px  black; padding: 11%;">
+  <h1 class="mb-3 h2">A WEB DEVELOPER</h1>
 
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Auto-resizing sidenav</p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Users
-    </button>
-    <br>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Datas
-    </button>
-    <br>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Accounts
-    </button>
-    <br>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Task
-    </button>
-  </mat-drawer>
+  <h4>
+    I am a Developer and I love to create Applications.I am very Good developer and I
+    am always looking for good projects.
+  </h4>
+</div>
+    <div class="row p-4">
+      <div class="col-sm">
+        <div class="card" >
+          <div>
+            <img src="../../assets/images/project-icon.png" class="card-img-top " alt="...">
+          </div>
 
-  <div class="example-sidenav-content">
-   <div class="row">
-    <div class="col-12">
-      <h5>WELCOME TO THE FROZEN LAND</h5>
+          <div class="card-body">
+            <h5 class="card-title">PROJECTS</h5>
+            <p class="card-text">I have worked on many project and im very proud of them, I am very
+              good Developer and I am always looking for new Projects</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" >
+          <div>
+            <img src="../../assets/images/working-on-office-icon.png" class="card-img-top " alt="...">
+          </div>
+          <p><i class="fa fa-globe" aria-hidden="true"></i></p>
+          <div class="card-body">
+            <h5 class="card-title">SKILLS</h5>
+            <p class="card-text">I have a lot of skills and im very good at them. I am verygood at
+            programming and I am always looking for new skills</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card" >
+          <div>
+            <img src="../../assets/images/distributor-icon.png" class="card-img-top " alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">NETWORK</h5>
+            <p class="card-text">I have a lot of network skills and im very good at them.And i
+              always looks for Good Networking Skills</p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
     </div>
-   </div>
+    <hr>
+    <div class="row g-0 mt-2 p-4">
+      <div class="col-sm-6 col-md-8 to-center">
+        <h1>
+          ABOUT ME
+        </h1>
+        <p>I am a Developer and I love to create Applications.I am very Good developer and I
+          am always looking for good projects.</p>
+      </div>
+      <div class="col-6 col-md-4">
+        <a href="/">
+          <img class="img-responsive" src="../../assets/images/true-agency-o4UhdLv5jbQ-unsplash.jpg"
+           style="height: 211px; box-shadow:0px 0px 10px  black;
+          width: 100%;">
+        </a>
+      </div>
+    </div>
   </div>
+  <!-- </div> -->
+  <!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background-color:#1a1c1d; color: aliceblue;">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+        <!-- <h5 class="text-uppercase">THANK YOU</h5>
+        <p>FOR YOUR VISIT</p> -->
+      </div>
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Links</h5>
+      <ul class="list-unstyled">
+          <li>
+           <p>HOME</p>
+          </li>
+          <li>
+            <p>CONTACT</p>
+          </li>
+          <li>
+            <p>CONTACT</p>
+          </li>
+          <!-- <li>
+            <a href="#!">Link 4</a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase"> Social Links</h5>
+        <ul class="list-unstyled">
+          <li>
+           <p>HOME</p>
+          </li>
+          <li>
+            <p>CONTACT</p>
+          </li>
+          <li>
+            <p>CONTACT</p>
+          </li>
+          <!-- <li>
+            <a href="#!">Link 4</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:ravid RVR
+  </div>
+</footer>
+<!-- Footer -->
 
-</mat-drawer-container>
