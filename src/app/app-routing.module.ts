@@ -7,7 +7,11 @@ import { Router } from '@angular/router';
 import { RegistrationComponent } from './registration/registration.component';
 const routes: Routes = [
   { path: '', component: LoginComponent },
-  { path: 'registration', component: RegistrationComponent },
+  {
+    path: 'registration',
+    component: RegistrationComponent,
+    canActivate: [AuthserviceService],
+  },
   {
     path: 'Homepage',
     component: HomePageComponent,

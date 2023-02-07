@@ -16,20 +16,33 @@ import { RegistrationComponent } from './registration/registration.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
-
+import { MatTableModule } from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
+import { TableEditComponent } from './Dialog/table-edit/table-edit.component';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     LoginComponent,
     RegistrationComponent,
+    TableEditComponent,
   ],
   imports: [
+    FormsModule,
+    MatSelectModule,
+    MatDialogModule,
+    HttpClientModule,
     BrowserModule,
+    MatFormFieldModule,
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
     MatListModule,
+    MatTableModule,
     MatCheckboxModule,
     ReactiveFormsModule,
     MatExpansionModule,

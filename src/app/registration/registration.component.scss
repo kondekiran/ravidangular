@@ -36,29 +36,30 @@ mat-sidenav-content{
   justify-content: end;
 }
 
-///bgimg
- .card-img, .card-img-bottom, .card-img-top{
-  width: 20%;
- }
- .to-center{
-  margin-top:auto;
-  margin-bottom: auto;
 
- }
-.card{
-  justify-content: center;
-  text-align: center;
-       border: var(--bs-card-border-width) solid white !important;
-}
-.back-image{
-background-image: url(../../assets/images/home-banner.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 50vh;
+.example-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
 }
 
+.example-header {
+  min-height: 64px;
+  padding: 8px 24px 0;
+}
 
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+}
+.active {
+  color: red;
+}
 
 
 

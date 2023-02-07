@@ -3,12 +3,13 @@
   <span class="example-spacer"></span>
   <button mat-icon-button (click)="regform()" class="example-icon favorite-icon" aria-label="Example icon-button with
   heart icon">
-    <mat-icon>man</mat-icon>
+    <mat-icon>dashboard</mat-icon>
   </button>
   <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
     <mat-icon>more_vert</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
+
     <button mat-menu-item (click)="Logout()" >
       <mat-icon>logout</mat-icon>
       <span>LogOut</span>
@@ -51,7 +52,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm">
+      <div class="col-sm"  (click)="regform()">
         <div class="card" >
           <div>
             <img src="../../assets/images/working-on-office-icon.png" class="card-img-top " alt="...">
